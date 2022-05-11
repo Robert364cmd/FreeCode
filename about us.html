@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>site</title>
+  </head>
+  <body>
+    <nav class="header-nav">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <button id="login" class="button blue" href="/login">
+        <i class="fa fa-unlock"></i>
+        <span>Войти</span>
+      </button>
+      
+      <a id="register" class="button purple" href="/register">
+        <i class="fa fa-user-plus"></i>
+        <span>Зарегистрироваться</span>
+      </a>
+      <ul class="nav">
+          <li><a href="index.html">На главную</a></li>
+          <li><a href="About.html">Наша Команда</a></li>
+          <li><a href="shops.html">Услуги</a></li>
+          <li><a href="about us.html">О Нас</a></li>
+          <li><a href="Contacts.html">Контакты</a></li>
+        </ul>
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+            <!-- Logo Area -->
+            <!-- Black transparent bg -->
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="tm-brand-container text-center">
+                <h1 class="tm-brand-name">FreeCode</h1>
+                <p class="tm-brand-description mb-0">Творите.Мечтайте.Реализуйте</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <!-- Welcome Text -->
+            <!-- White transparent bg -->
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">FreeCode:</h2>
+                <p class="pb-0">
+                  Образовательный Портал
+
+Мы&nbsp;учим людей с&nbsp;нуля осваивать программирование, веб-дизайн и&nbsp;маркетинг. Проводим онлайн-курсы со&nbsp;стажировкой и&nbsp;бесплатные мастер-классы, развиваем сообщество, сотрудничаем с&nbsp;компаниями по&nbsp;трудоустройству и&nbsp;непрерывно тестируем новые методики для поднятия эффективности обучения. </p>
+              </div>
+            </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/parallax.min.js"></script>
+      <script>
+        function detectMsBrowser() {
+          using_ms_browser =
+            navigator.appName == "Microsoft Internet Explorer" ||
+            (navigator.appName == "Netscape" &&
+              navigator.appVersion.indexOf("Edge") > -1) ||
+            (navigator.appName == "Netscape" &&
+              navigator.appVersion.indexOf("Trident") > -1);
+  
+          if (using_ms_browser == true) {
+            alert(
+              "Please use Chrome or Firefox for the best browsing experience!"
+            );
+          }
+        }
+        function setBrandMarginTop() {
+          var bottomContainerHeight = $(".tm-welcome-container").height();
+  
+          $(".tm-brand-container-outer").css({
+            "margin-top": -bottomContainerHeight + "px"
+          });
+        }
+  
+        $(function() {
+          setBrandMarginTop();
+          detectMsBrowser();
+  
+          // Handle window resize event
+          $(window).resize(function() {
+            setBrandMarginTop();
+          });
+        });
+      </script>

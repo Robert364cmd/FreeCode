@@ -1,0 +1,666 @@
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: #87509c;/*Цвет хедера*/
+}
+
+.logo {
+  padding-top: auto; /*Отступ сверху*/
+  padding-left: auto;/*Отступ справа*/
+}
+
+.nav {
+  list-style: none; /*откл. маркеров*/
+  padding: auto;
+}
+.nav li{
+   float: left; /* Выстраивание элементов списка в один ряд. */
+   margin-right: 0px; /* создание отступов для того, чтобы не сливались пункты меню. */
+   font-family: Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
+   font-size: 16px; /* Размер текста в ссылках. */  
+}
+
+.nav li a {
+  display:block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+  padding: 10px 15px;  /* Внутри блочные отступы. */
+  background: #87509c; /* Цвет блоков меню. */
+  color: #efefef; /* Цвет текста в блоках меню. */
+  text-decoration: none; /* Устранение подчёркивания ссылок. */
+  position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+}
+
+.nav li a:hover {
+   background: #643a79; /* Цвет блока при наведении курсора. */
+   color: #efefef;  /* Цвет текста при наведении курсора. */
+}
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b6b6b;
+  overflow-x: hidden;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+li {
+  color: #757575;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-right: 20px;
+  display: inline;
+  margin-right: 5px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.tm-bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tm-bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tm-bg-green {
+  background-color: #00e613;
+  
+
+  
+}
+
+.tm-bg-orange {
+  background-color: #e95810;
+}
+
+.tm-bg-blue {
+  background-color: #159fe4;
+}
+
+.tm-bg-dark-gray {
+  background-color: #ff0000;
+}
+
+/*
+  Welcome section
+*/
+#tmWelcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tm-brand-container-outer {
+  margin-top: -400px;
+}
+
+.tm-brand-container-inner {
+  max-width: 580px;
+  width: 100%;
+}
+
+.tm-brand-container {
+  padding: 75px 110px;
+}
+
+.tm-brand-name {
+  font-size: 3.8rem;
+}
+
+.tm-brand-description {
+  font-size: 1.4rem;
+}
+
+.parallax-window {
+  min-height: 1100px;
+  background: transparent;
+}
+
+#tmContact {
+  min-height: 1197px;
+}
+
+.tm-welcome-container {
+  min-height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.tm-welcome-title {
+  margin-bottom: 40px;
+}
+
+.tm-welcome-left {
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tm-welcome-left-col {
+  display: flex;
+  align-items: center;
+}
+
+.tm-welcome-right {
+  color: white;
+  background-color: #bd312e;
+  padding: 80px 43px 70px;
+  height: 100%;
+}
+
+.tm-welcome-icon {
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}
+
+/*
+  Portfolio section
+*/
+
+#tmPortfolio {
+  padding-top: 80px;
+}
+
+.tm-portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.tm-portfolio-name {
+  width: 330px;
+  height: 220px;
+  font-size: 2rem;
+  padding: 70px 95px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.tm-portfolio-description {
+  width: calc(100% - 330px);
+  padding: 20px 45px;
+}
+
+.tm-portfolio-description h3 {
+  margin-bottom: 20px;
+}
+
+.tm-text-green {
+  color: #00ff0d;
+}
+
+.tm-text-orange {
+  color: #df520b;
+}
+
+.tm-text-blue {
+  color: #0aa2ee;
+}
+
+.tm-text-dark-gray {
+  color: #ff0000;
+}
+
+.tm-title-small {
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/*
+  Contact section
+*/
+
+#tmContact {
+  padding-top: 95px;
+}
+
+.tm-contact-item {
+  text-align: center;
+  width: 33.3334%;
+  max-width: 345px;
+  height: auto;
+  min-height: 420px;
+  margin-right: 35px;
+  background-color: white;
+  padding: 54px 34px 44px;
+}
+
+.tm-contact-item:last-child {
+  margin-right: 0;
+}
+
+.tm-contact-items-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.tm-contact-item-icon {
+  margin-bottom: 45px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tmContactForm {
+  width: 100%;
+  max-width: 680px;
+  padding: 45px 45px 30px;
+  margin-bottom: 95px;
+}
+
+.form-group {
+  max-width: 355px;
+}
+
+.form-control {
+  background: transparent;
+  border-color: #999999;
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.tm-btn-submit {
+  background-color: #999999;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+
+.tm-btn-submit:focus,
+.tm-btn-submit:hover {
+  background-color: #676767;
+}
+
+.tm-copyright-text {
+  margin-bottom: 30px;
+}
+
+.tm-link {
+  color: #676767;
+}
+
+@media (max-width: 1054px) {
+  .tm-contact-item-icon {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tm-contact-items-container {
+    flex-direction: column;
+  }
+
+  .tm-contact-item {
+    width: auto;
+    max-width: 680px;
+    min-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .tm-contact-item:last-child {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  #tmContactForm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .tm-portfolio-item {
+    flex-direction: column;
+  }
+
+  .tm-portfolio-name {
+    justify-content: center;
+  }
+
+  .tm-portfolio-name,
+  .tm-portfolio-description {
+    width: 100%;
+  }
+
+  .tm-portfolio-description {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 572px) {
+  .tm-brand-container {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 443px) {
+  .tm-brand-name {
+    font-size: 3rem;
+  }
+
+  .tm-brand-container {
+    padding: 25px;
+  }
+}
+
+.button {
+  /* Сбрасываем дефолтные стили */
+  padding-top: px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+  font-family: Roboto, Verdana, Tahoma, sans;
+  /* Тут можно поэкспериментировать */
+  padding: 12px 16px;
+  border-radius: 100px;
+  color: #fff;
+  margin-left: 80%;
+  
+  
+}
+.button i {
+  margin-right: 4px;
+  
+}
+.button + .button {
+  margin-left: 6px;
+  padding-top: 10px;
+}
+.button.blue {
+  background: #2196F3;
+  
+}
+.button.purple {
+  background: #9b59b6;
+  
+}
+.button:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button:hover.blue {
+  background: #39a1f4;
+}
+.button:hover.purple {
+  background: #a66bbe;
+}
+.button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button:active.blue {
+  background: #0d8aee;
+}
+.button:active.purple {
+  background: #8f4bab;
+}
+.main_button{
+  position: fixed;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+.custom-btn {
+  width: 150px;
+  height: 130px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgb(251, 39, 2) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+a.knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ex1,.ex2,.ex3,.ex4,.ex5,.ex6,.ex7,.ex8,.ex9,.ex10
+{padding:10px;width:300px;height:100px;margin:0 auto;text-align:center;position:relative}
+.ex10 h1:before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-left: 15px solid rgb(156, 59, 212);
+  top: 23%;
+  margin: 0 auto;
+  left: -2%;
+  }
+  
+  .ex10 h1:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-right: 15px solid rgb(156, 59, 212);
+  top: 23%;
+  margin: 0 auto;
+  right: -2%;
+  }
+
+  .tm-text-SergAy{
+    color: #9900ff
+  }
+
+.tm-text-Aleks{
+  color: #9900ff
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ae00ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c300ff;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 400;
+    }
+}
+
+body {
+  background: url(https://bootstraptema.ru/images/textures/k/krapinki.png)
+  }
+  .menuItem .menu {
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #6f00ff;
+  margin-left: 30px;
+  margin-top: 20px;
+  }
+  .menuItem .menu li {
+  padding: 16px 30px 0px;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  background: #ffffff;
+  line-height: 30px;
+  border-left: 2px solid #6f00ff;
+  border-radius: 0;
+  
+  }
+  .menuItem .detail {
+  font-size: 13px;
+  color: #444;
+  font-weight: normal;
+  }
+  .menuItem .price {
+  font-size: 13px;
+  float: right;
+  font-weight: 600;
+  }
+  .menuItem .btn {
+  text-align: center;
+  color: #FFFFFF;
+  background: #6f00ff;
+  border-color: #6f00ff;
+  width: 120px;
+  border-radius: 0;
+  }
+
+
+  #myp {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    line-height: 100%;
+    font-size: 9px;
+  }
+
+  
